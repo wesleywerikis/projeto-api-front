@@ -5,10 +5,10 @@
     <input type="number" placeholder="Age"class="form-control">
     <input type="text" placeholder="City"class="form-control">
 
-    <input type="button" value="Register" class="btn btn-primary">
-    <input type="button" value="Change"class="btn btn-warning">
-    <input type="button" value="Remove"class="btn btn-danger">
-    <input type="button" value="Cancel"class="btn btn-secondary">
+    <input type="button" value="Register" *ngIf="btnRegister" class="btn btn-primary">
+    <input type="button" value="Change" *ngIf="!btnRegister" class="btn btn-warning">
+    <input type="button" value="Remove" *ngIf="!btnRegister" class="btn btn-danger">
+    <input type="button" value="Cancel" *ngIf="!btnRegister" class="btn btn-secondary">
 
 </form>
 
