@@ -88,6 +88,47 @@ export class PrincipalComponent {
     });
    }
 
+  // · Method to remove customers
+  remove():void{
+
+    this.service.remove(this.customer.code)
+    .subscribe(retorno => {
+
+      // Get position of the vector where the customer is
+      let position = this.customers.findIndex(obj => {
+        return obj.code == this.customer.code;
+      });
+
+      // · Remove customer the vector
+      this.customers.splice(position, 1);
+
+      // · Clear form
+      this.customer = new Customer();
+
+      // · Button visibility
+      this.btnRegister = true;
+
+      // · Tablle visibility
+      this.table = true;
+
+      // · Message
+      alert('Client deleted successfully!');
+
+    });
+   }
+
+  cancel():void{
+
+    // · Clear form
+    this.customer = new Customer();
+
+    // · Button visibility
+    this.btnRegister = true;
+
+    // · Tablle visibility
+    this.table = true;
+  }
+
   ngOnInit() {
     this.select();
   }
