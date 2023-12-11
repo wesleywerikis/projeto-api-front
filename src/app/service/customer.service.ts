@@ -22,7 +22,12 @@ export class CustomerService {
 
   // · Method to register customer
   register(obj:Customer):Observable<Customer>{
-    return this.http .post<Customer>(this.url, obj);
+    return this.http.post<Customer>(this.url, obj);
+  }
+
+  // · Method to edit customer
+  edit(obj:Customer):Observable<Customer>{
+    return this.http.put<Customer>(this.url, obj);
   }
 
 
