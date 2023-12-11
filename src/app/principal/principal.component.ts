@@ -18,6 +18,8 @@ export class PrincipalComponent {
 
   btnRegister: boolean = true;
 
+  table:boolean = true;
+
   customers: Customer[] = [];
 
   constructor(private service: CustomerService) {}
@@ -26,6 +28,65 @@ export class PrincipalComponent {
     this.service.select()
     .subscribe(retorno => this.customers = retorno);
   }
+
+  // · Method register
+  register():void{
+    this.service.register(this.customer)
+    .subscribe(retorno => {
+
+      // · Register new customer in vector
+      this.customers.push(retorno);
+
+      // · Clear form
+      this.customer = new Customer();
+
+      // · Message
+      alert('Customer registered successfully!');
+    });
+  }
+
+  // · Method select a specific customer
+   selecCustomer(position:number):void{
+
+    // · Selec customer in vector
+    this.customer = this.customers[position];
+
+    // · Button visibility
+    this.btnRegister =  false;
+
+    // · Tablle visibility
+    this.table = false;
+
+   }
+
+   // · Method to edit customers
+   edit():void{
+
+    this.service.edit(this.customer)
+    .subscribe(retorno => {
+
+      // Get position of the vector where the customer is
+      let position = this.customers.findIndex(obj => {
+        return obj.code == retorno.code;
+      });
+
+      // · Change customer data in the vector
+      this.customers[position] = retorno;
+
+      // · Clear form
+      this.customer = new Customer();
+
+      // · Button visibility
+      this.btnRegister = true;
+
+      // · Tablle visibility
+      this.table = true;
+
+      // · Message
+      alert('Client changed successfully!');
+
+    });
+   }
 
   ngOnInit() {
     this.select();
