@@ -1,9 +1,9 @@
 <form>
     <img src="assets/customer.png">
 
-    <input type="text" placeholder="Name" class="form-control">
-    <input type="number" placeholder="Age"class="form-control">
-    <input type="text" placeholder="City"class="form-control">
+    <input type="text" placeholder="Name" class="form-control" name="name" [(ngModel)]="customer.name" >
+    <input type="number" placeholder="Age"class="form-control" name="age" [(ngModel)]="customer.age" >
+    <input type="text" placeholder="City"class="form-control" name="city" [(ngModel)]="customer.city" >
 
     <input type="button" value="Register" *ngIf="btnRegister" class="btn btn-primary">
     <input type="button" value="Change" *ngIf="!btnRegister" class="btn btn-warning">
