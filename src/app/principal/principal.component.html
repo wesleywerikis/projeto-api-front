@@ -5,16 +5,14 @@
     <input type="number" placeholder="Age"class="form-control" name="age" [(ngModel)]="customer.age" >
     <input type="text" placeholder="City"class="form-control" name="city" [(ngModel)]="customer.city" >
 
-    <input type="button" value="Register" *ngIf="btnRegister" class="btn btn-primary">
-    <input type="button" value="Change" *ngIf="!btnRegister" class="btn btn-warning">
+    <input type="button" value="Register" *ngIf="btnRegister" class="btn btn-primary" (click)="register()" >
+    <input type="button" value="Change" *ngIf="!btnRegister" class="btn btn-warning" (click)="edit()" >
     <input type="button" value="Remove" *ngIf="!btnRegister" class="btn btn-danger">
     <input type="button" value="Cancel" *ngIf="!btnRegister" class="btn btn-secondary">
 
 </form>
 
-<h1>{{customer | json}}</h1>
-
-<table class="table">
+<table class="table" *ngIf="table">
     <thead>
         <tr>
             <th>#</th>
@@ -31,7 +29,7 @@
             <td>{{c.name}}</td>
             <td>{{c.age}}</td>
             <td>{{c.city}}</td>
-            <td><button class="btn btn-success">Select</button></td>
+            <td><button class="btn btn-success" (click)="selecCustomer(i)" >Select</button></td>
         </tr>
     </tbody>
 </table>
