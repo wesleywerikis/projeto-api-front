@@ -7,8 +7,8 @@
 
     <input type="button" value="Register" *ngIf="btnRegister" class="btn btn-primary" (click)="register()" >
     <input type="button" value="Change" *ngIf="!btnRegister" class="btn btn-warning" (click)="edit()" >
-    <input type="button" value="Remove" *ngIf="!btnRegister" class="btn btn-danger">
-    <input type="button" value="Cancel" *ngIf="!btnRegister" class="btn btn-secondary">
+    <input type="button" value="Remove" *ngIf="!btnRegister" class="btn btn-danger" (click)="remove()" >
+    <input type="button" value="Cancel" *ngIf="!btnRegister" class="btn btn-secondary" (click)="cancel()" >
 
 </form>
 
