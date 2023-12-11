@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 import { Customer } from '../model/Customer';
 import { CustomerService } from '../service/customer.service';
 
 @Component({
   selector: 'app-principal',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.css',
 })
