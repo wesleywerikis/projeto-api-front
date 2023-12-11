@@ -30,5 +30,11 @@ export class CustomerService {
     return this.http.put<Customer>(this.url, obj);
   }
 
+  // · Method to remove customers
+  remove(code:number):Observable<void>{
+    return this.http.delete<void>(this.url + "/" + code);
+  }
+
+
 
 }
