@@ -20,4 +20,10 @@ export class CustomerService {
     return this.http.get<Customer[]>(this.url);
   }
 
+  // · Method to register customer
+  register(obj:Customer):Observable<Customer>{
+    return this.http .post<Customer>(this.url, obj);
+  }
+
+
 }
