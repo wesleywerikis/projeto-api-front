@@ -17,29 +17,29 @@
 
 + Página inicial
 
-![Alt text](image.png)
+![Alt text](img/image.png)
 
 
 + Registrar 
 
-![Alt text](image-1.png)
+![Alt text](img/image-1.png)
 
-![Alt text](image-2.png)
+![Alt text](img/image-2.png)
 
 + Selecionar p/ Alterar, Remover ou Cancelar a ação
 
-![Alt text](image-3.png)
+![Alt text](img/image-3.png)
 
   - Selecionado o #2 Lucas Oliveira para alterar a idade
 
-  ![Alt text](image-4.png)
-  ![Alt text](image-5.png)
-  ![Alt text](image-6.png)
+  ![Alt text](img/image-4.png)
+  ![Alt text](img/image-5.png)
+  ![Alt text](img/image-6.png)
 
   - Selecionado o #4 Murilo Henrique para remover
 
-  ![Alt text](image-7.png)
-  ![Alt text](image-8.png)
+  ![Alt text](img/image-7.png)
+  ![Alt text](img/image-8.png)
 
   <div align="center">
 <h2>Tecnologias utilizadas 💻</h2>
