@@ -1,27 +1,64 @@
-# ApiFront
+<div align="center">
+  <h1 style="border-bottom:none">API-FRONT (SpringBoot & Angular) 👨‍💻</h1> 
+  
+   <p>Este projeto é fruto dos ensinamentos do Ralf Lima, onde foi abordado a integração entre o front e back-end. Para o front foi utilizado (Angular, HTML, CSS & TypeScript), já no back utilizei o (Java & frame SpringBoot) e por fim, bando de dados MySQL.</p>
+</div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+- Acesse a playlist do curso do professor Ralf [clicando aqui](https://www.youtube.com/watch?v=7lGaYV5Hjx4&list=PLWXw8Gu52TRLR24HGjSiVrE5MrkU5tWX-&index=1).
 
-## Development server
+<h4>Tópicos abordados:</h4>
+  
+   + Criação de API em Spring Boot contendo os métodos: GET, POST, PUT e DELETE;
+   + Criação de uma estrutura front-end em Angular para consumir a API.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<div align="center">
+<h2>Telas do Projeto: </h2>
+</div>
 
-## Code scaffolding
++ Página inicial
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Alt text](image.png)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
++ Registrar 
 
-## Running unit tests
+![Alt text](image-1.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Alt text](image-2.png)
 
-## Running end-to-end tests
++ Selecionar p/ Alterar, Remover ou Cancelar a ação
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![Alt text](image-3.png)
 
-## Further help
+  - Selecionado o #2 Lucas Oliveira para alterar a idade
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  ![Alt text](image-4.png)
+  ![Alt text](image-5.png)
+  ![Alt text](image-6.png)
+
+  - Selecionado o #4 Murilo Henrique para remover
+
+  ![Alt text](image-7.png)
+  ![Alt text](image-8.png)
+
+  <div align="center">
+<h2>Tecnologias utilizadas 💻</h2>
+</div>
+
+- ``Java, SpringBoot & Angular``
+- ``HTML, CSS & TypeScript``
+- ``MySQL``
+
+## Conhecimentos adquiridos <br>
+ * Desenvolver API REST com Spring Boot
+ * Mapeamento objeto-relacional
+ * Validações dos dados da requisição no back-end
+ * Desenvolver front-end com Angular
+ * Trabalhar com HTML, CSS e Typescript
+ * Receber e enviar dados para a API
+
+<div align="center">
+<h2>PROJETO BACK-END</h2>
+
+⚡ [API-BACK-END](https://github.com/wesleywerikis/projeto-api) ⚡
+</div>
