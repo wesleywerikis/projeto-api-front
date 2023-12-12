@@ -1,7 +1,7 @@
 <div align="center">
   <h1 style="border-bottom:none">API-FRONT (SpringBoot & Angular) 👨‍💻</h1> 
   
-   <p>Este projeto é fruto dos ensinamentos do Ralf Lima, onde foi abordado a integração entre o front e back-end. Para o front foi utilizado (Angular, HTML, CSS & TypeScript), já no back utilizei o (Java & frame SpringBoot) e por fim, bando de dados MySQL.</p>
+   <p>Este projeto é fruto dos ensinamentos do Ralf Lima, onde foi abordado a integração entre o front e back-end. Para o front foi utilizado (Angular, HTML, CSS & TypeScript), já no back utilizei o (Java & frame SpringBoot) e por fim, banco de dados MySQL.</p>
 </div>
 
 - Acesse a playlist do curso do professor Ralf [clicando aqui](https://www.youtube.com/watch?v=7lGaYV5Hjx4&list=PLWXw8Gu52TRLR24HGjSiVrE5MrkU5tWX-&index=1).
